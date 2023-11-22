@@ -1,12 +1,12 @@
 let seed = [
-    { id: 1, nombre: "Jose", edad: 20 },
-    { id: 2, nombre: "Juan", edad: 21 },
-    { id: 3, nombre: "Eva", edad: 22 }
+    { id: 1, nombre: "huevos", precio: 2 },
+    { id: 2, nombre: "ternera", precio: 20 },
+    { id: 3, nombre: "galletas", precio: 3 }
 ]
 
-let users = null;
+let productos = null;
 
-export default function getUsers() {
+export default function getProductos() {
     // if (users)
     //     return users;
     // if (!global._users) {
@@ -17,9 +17,9 @@ export default function getUsers() {
     // }
 
     // Sólo cargamos valores iniciales una sóla vez
-    if (!users) 
-        users = seed;
+    if (!productos) 
+    productos = seed;
     
-    return users;
+    return productos;
 }
 
